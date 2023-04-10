@@ -1,0 +1,43 @@
+.stars {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0B0F1E;
+    background-size: 2px 2px;
+    animation: animStar 50s linear infinite;
+  }
+  
+  .stars:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='2' height='2' viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='%23ffffff' cx='1' cy='1' r='1'/%3E%3C/svg%3E");
+  }
+  
+  .stars:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='%23ffffff' cx='2' cy='2' r='1'/%3E%3C/svg%3E");
+    animation: animStar 50s linear infinite;
+    animation-delay: 25s;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(1000px);
+    }
+  }
+  
