@@ -83,7 +83,7 @@ export default function LoginForm() {
   }
 
   return (
-    <VStack spacing="4" as="form" border="1px solid #f2f2f2" borderRadius="lg" p="4"    boxShadow="0 0 5px rgba(0, 0, 0, 0.1)"onSubmit={formType === FormType.Login ? handleSubmit(handleLogin) : handleSubmit(handleSignup)}>
+    <VStack spacing="4" as="form" border="1px solid #f2f2f2" borderRadius="lg" p="4"  margin = {4}boxShadow="0 0 5px rgba(0, 0, 0, 0.1)"onSubmit={formType === FormType.Login ? handleSubmit(handleLogin) : handleSubmit(handleSignup)}>
       {error && (
         <Alert status="error">
           <AlertIcon />
